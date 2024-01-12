@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> HTML Elements and Forms</title>
+</head>
+
+<body>
+    <!-- Images -->
+    <section>
+
+        <h1>Sandy's Natural Pet Treats</h1>
+        <center>
+            <img src="images/chickenfeet.jpg" alt="dehydrated chicken feet" width="350" height="400">
+            <img src="images/pigears.jpg" alt="dehydrated pig ears" width="350" height="400">
+            <img src="images/porkliver.jpg" alt="dehydrated pork liver" width="350" height="400">
+        </center>
+    </section>
+
+    <!-- Tables -->
+    <section>
+        <style>
+            table {
+                width: 70%;
+                /* Set the width of the table */
+                margin: 50px auto;
+                /* Center the table on the page */
+            }
+
+            th,
+            td {
+                text-align: left;
+                /* Align text to the left */
+            }
+        </style>
+
+        <h2>Weekly Schedule</h2>
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Evening</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Exercise</td>
+                <td>Work</td>
+                <td>Dinner</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Manage orders</td>
+                <td>Meeting</td>
+                <td>Work</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Exercise</td>
+                <td>Lunch</td>
+                <td>Work</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Running</td>
+                <td>Study</td>
+                <td>Quiet evening</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Exercise</td>
+                <td>Workshop</td>
+                <td>Reading</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Manage orders</td>
+                <td>Work</td>
+                <td>Meeting</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Rest</td>
+                <td>Family time</td>
+                <td>Prepare for the week</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- HTML Forms -->
+    <h2>Survey Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Last Name, First Name" required>
+        <br><br>
+
+        <label for="emailaddress">Email Address:</label>
+        <input type="text" id="emailaddress" placeholder="example@domain.com" required>
+        <br><br>
+
+        <label for="feedback">Feedback:</label>
+        <br>
+        <textarea id="feedback" rows="10" cols="40"></textarea>
+        <br>
+       
+        <p>How did you find out about our product?</p>
+        <input type= "checkbox" id="Facebook" name="socialmedia">
+        <label for="Facebook"> Facebook </label>
+        <input type= "checkbox" id="Instagram" name="socialmedia">
+        <label for="Instagram"> Instagram </label>
+        <input type= "checkbox" id="TikTok" name="socialmedia">
+        <label for="TikTok"> TikTok </label>
+        <input type= "checkbox" id="X" name="socialmedia">
+        <label for="X"> X </label>
+    </form>
+    </section>
+</body>
+
+</html>
